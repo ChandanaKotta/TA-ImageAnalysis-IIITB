@@ -1,10 +1,14 @@
 # play with bits
+# the idea of this code is to illustrate the importance of bits in capturing information. 
+# The bits to the left (in each pixel comprised of say 8 bits) capture the maximum amount of information. 
+
 import cv2
 import numpy as np
 
 mona_lisa = cv2.imread("mona.jpg")
 height, width, channels = mona_lisa.shape
 
+# the position of the  bit that shall be manipulated.
 bit_number = 0
 
 cv2.imshow("mona",mona_lisa)
@@ -15,7 +19,8 @@ for i in range(height):
 	for j in range(width):
 		
 		b,g,r = mona_lisa[i,j]
-
+		
+		# convert from uint8 to bits, replace each pixel's nth bit with 0. Repeat for all three channels. 
 		b = np.unpackbits(b)
 		b[bit_number] = 0
 
