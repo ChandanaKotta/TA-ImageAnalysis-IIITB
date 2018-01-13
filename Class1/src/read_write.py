@@ -3,7 +3,7 @@
 import cv2
 
 colorful = cv2.imread('../images/colorful.jpg')
-# colorful = cv2.imread('colorful.jpg')
+# colorful = cv2.imread('../images/colorful.jpg')
 
 # grayscale reading
 gray = cv2.imread('../images/colorful.jpg',0)
