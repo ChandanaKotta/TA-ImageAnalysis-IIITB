@@ -5,7 +5,7 @@
 import cv2
 import numpy as np
 
-mona_lisa = cv2.imread("mona.jpg")
+mona_lisa = cv2.imread("../images/mona.jpg")
 height, width, channels = mona_lisa.shape
 
 # the position of the  bit that shall be manipulated.
@@ -35,7 +35,7 @@ for i in range(height):
 		mona_lisa[i,j,2] = np.packbits(r)
 
 cv2.imshow("altered",mona_lisa)
-real_mona = cv2.imread("mona.jpg")
+real_mona = cv2.imread("../images/mona.jpg")
 
 cv2.imshow("real",real_mona)
 

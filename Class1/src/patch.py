@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
-#colorful = cv2.imread('colorful.jpeg')
-colorful = cv2.imread('colorful.jpg')
+colorful = cv2.imread('../images/colorful.jpeg')
+# colorful = cv2.imread("../images/colorful.jpg")
 
 # dimensions using OpenCV
 height, width, channels = colorful.shape

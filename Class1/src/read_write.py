@@ -2,11 +2,11 @@
 
 import cv2
 
-colorful = cv2.imread('colorful.jpg')
+colorful = cv2.imread('../images/colorful.jpg')
 # colorful = cv2.imread('colorful.jpg')
 
 # grayscale reading
-gray = cv2.imread('colorful.jpg',0)
+gray = cv2.imread('../images/colorful.jpg',0)
 
 cv2.imshow("display",colorful)
 cv2.imshow("display-gray",gray)

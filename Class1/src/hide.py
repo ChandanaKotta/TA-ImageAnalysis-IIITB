@@ -6,8 +6,8 @@
 import cv2
 import numpy as np
 
-mona_lisa = cv2.imread("mona.jpg")
-mr_bean = cv2.imread("mr_bean.jpg")
+mona_lisa = cv2.imread("../images/mona.jpg")
+mr_bean = cv2.imread("../images/mr_bean.jpg")
 
 # Re-sizing mr.beans image to have the same dimensions as that of Mona Lisa.
 mr_bean = mr_bean[:,100:700,:]
@@ -48,7 +48,7 @@ for i in range(height):
 		mona_lisa[i,j,2] = np.packbits(fused_pixel_r)
 
 cv2.imshow("fused",mona_lisa)
-real_mona = cv2.imread("mona.jpg")
+real_mona = cv2.imread("../images/mona.jpg")
 
 cv2.imshow("real",real_mona)
 
