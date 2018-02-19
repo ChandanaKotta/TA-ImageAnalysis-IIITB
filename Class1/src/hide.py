@@ -1,7 +1,7 @@
 # play with bits
 # Extending the previous ideas about the most significant bits in pixels in the context of capturing information.
 # This property can be exploited to fuse images. So may be used for encryption.
-# In the following example, we will try to fuse Mr.Beans image over an image of Mona Lisa.
+#0the following example, we will try to fuse Mr.Beans image over an image of Mona Lisa.
 
 import cv2
 import numpy as np
@@ -24,6 +24,7 @@ cv2.imshow("mr_bean",mr_bean)
 cv2.waitKey(0)
 
 fused = np.zeros((height,width,3))
+
 for i in range(height):
 	for j in range(width):
 		
